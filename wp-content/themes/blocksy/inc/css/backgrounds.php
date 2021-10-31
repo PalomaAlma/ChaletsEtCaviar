@@ -269,9 +269,9 @@ if (! function_exists('blocksy_output_single_background_css')) {
 				);
 
 				if (
-					! floatval($background_image['x']) === 0
+					floatval($background_image['x']) !== 0
 					||
-					! floatval($background_image['y']) === 0
+					floatval($background_image['y']) !== 0
 				) {
 					$args['css']->put(
 						$args['selector'],

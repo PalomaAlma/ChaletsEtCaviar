@@ -1,3 +1,9 @@
+1.8.6.2: 2021-10-01
+- Fix: Menu position dropdowns of level 2+
+- Fix: CSS background position not outputted correctly
+- Fix: Cover cards type vertical alignment issue when button is present
+- Fix: Sticky header jumps when inside customizer mode
+
 1.8.6.1: 2021-09-30
 - New: Skip link URL filter
 - New: Search results typography options

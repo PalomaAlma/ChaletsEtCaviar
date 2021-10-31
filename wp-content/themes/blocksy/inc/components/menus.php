@@ -1,10 +1,12 @@
 <?php
 
-function blocksy_menu_get_child_svgs() {
-	return [
-		'default' => '<svg width="8" height="8" viewBox="0 0 15 15" aria-label="'  . __('Menu dropdown icon', 'blocksy') . '"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg>',
-		'bordered' => '<svg width="12" height="12" viewBox="0 0 15 15" aria-label="'  . __('Menu dropdown icon', 'blocksy') . '"><path d="M1 15a1 1 0 01-.71-.29 1 1 0 010-1.41l5.8-5.8-5.8-5.8A1 1 0 011.7.29l5.8 5.8 5.8-5.8a1 1 0 011.41 1.41l-5.8 5.8 5.8 5.8a1 1 0 01-1.41 1.41l-5.8-5.8-5.8 5.8A1 1 0 011 15z"></path></svg>'
-	];
+if (! function_exists('blocksy_menu_get_child_svgs')) {
+	function blocksy_menu_get_child_svgs() {
+		return [
+			'default' => '<svg width="8" height="8" viewBox="0 0 15 15" aria-label="'  . __('Menu dropdown icon', 'blocksy') . '"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"/></svg>',
+			'bordered' => '<svg width="12" height="12" viewBox="0 0 15 15" aria-label="'  . __('Menu dropdown icon', 'blocksy') . '"><path d="M1 15a1 1 0 01-.71-.29 1 1 0 010-1.41l5.8-5.8-5.8-5.8A1 1 0 011.7.29l5.8 5.8 5.8-5.8a1 1 0 011.41 1.41l-5.8 5.8 5.8 5.8a1 1 0 01-1.41 1.41l-5.8-5.8-5.8 5.8A1 1 0 011 15z"></path></svg>'
+		];
+	}
 }
 
 if (! function_exists('blocksy_main_menu_fallback')) {

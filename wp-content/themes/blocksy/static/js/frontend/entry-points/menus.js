@@ -33,6 +33,7 @@ export const menuEntryPoints = [
 		load: () => import('../header/responsive-desktop-menu'),
 		// onLoad: false,
 		events: ['ct:general:device-change', 'ct:header:render-frame'],
+		// forcedEvents: ['ct:header:render-frame'],
 		forcedEventsElsSkip: true,
 		condition: () =>
 			getCurrentScreen() === 'desktop' &&
@@ -89,7 +90,7 @@ export const menuEntryPoints = [
 					let hadResponsive = menu.dataset.responsive
 					menu.dataset.responsive = 'yes'
 
-					if (menu.dataset.responsive !== 'yes') {
+					if (hadResponsive === 'no') {
 						ctEvents.trigger('ct:header:init-popper')
 					}
 				}

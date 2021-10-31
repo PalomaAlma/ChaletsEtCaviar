@@ -1,6 +1,5 @@
 .entry-button {
 	font-size: 15px;
-	margin-top: auto;
 
 	&[data-type="simple"],
 	&[data-type="outline"] {
@@ -52,4 +51,8 @@
 	&[data-alignment="right"] {
 		align-self: flex-end;
 	}
+}
+
+.entries:not([data-cards="cover"]) .entry-button {
+	margin-top: auto;
 }
